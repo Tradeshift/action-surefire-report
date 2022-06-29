@@ -1,0 +1,25 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+    registries:
+      - npm-tradeshift
+  - package-ecosystem: maven
+    directory: /tests
+    schedule:
+      interval: daily
+  - package-ecosystem: maven
+    directory: /tests/email
+    schedule:
+      interval: daily
+  - package-ecosystem: maven
+    directory: /tests/utils
+    schedule:
+      interval: daily
+registries:
+  npm-tradeshift:
+    type: npm-registry
+    url: https://npm.pkg.github.com
+    token: ${{secrets.NPM_READ_TOKEN}}
