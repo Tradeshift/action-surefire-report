@@ -2,6 +2,6 @@
     "description": "GitHub Action to process maven surefire reports",
     "checks": [],
     "maintainers": [
-        "Developer productivity"
+        "developer-productivity"
     ]
 }
